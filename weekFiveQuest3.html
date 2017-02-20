@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>week five question 3</title>
+	<meta charset="utf-8" />
+    <script>
+        function getTextInfo() {
+            var x = new XMLHttpRequest();
+            x.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("demo").innerHTML = this.responseText;
+                }
+            };
+            x.open("GET", "ajax.txt", true);
+            x.send();
+        }
+    </script>
+</head>
+<body>
+    <div id="demo"></div>
+</body>
+</html>

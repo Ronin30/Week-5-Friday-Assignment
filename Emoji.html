@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h3>If you are smiling enter in "e1Smile" or if you are not smiling, enter in "e2Smile"</h3>
+
+    <input id="emojiType" type="text" />
+
+    <button onclick="emojiTrouble()">Select me</button>
+
+    <script>
+        var emojiTrouble = function (e1Smile, e2Smile) {
+
+            var emoji = document.getElementById("emojiType").value;
+            console.log(emojiType);
+
+
+            if (emoji === 'e1Smile') {
+                document.write("We're Smiling!");
+            }
+            else if (emoji === 'e2Smile') {
+                document.write("Womp womp not Smiling!");
+            }
+            else {
+                document.write("Try Again!");
+            }
+
+        }
+    </script>
+
+</body>
+</html>

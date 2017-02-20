@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <h3>If it's a weekday enter in "weekday" or if it's a vacation day, enter in "vacation"</h3>
+
+    <input id="workToday" type="text" />
+
+    <button onclick="sleepIn()">Select me</button>
+
+    <script>
+        var sleepIn = function (weekday, vacation) {
+
+            var workDay = document.getElementById("workToday").value;
+            console.log(workToday);
+
+
+            if (workDay === 'weekday') {
+                document.write("Wake up! Time to Earning a Living!");
+            }
+            else if (workDay === 'vacation') {
+                document.write(" True! You're Sleeping in!");
+            }
+            else {
+                document.write("Try Again!");
+            }
+
+        }
+    </script>
+
+</body>
+</html>
